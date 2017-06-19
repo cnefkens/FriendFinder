@@ -1,0 +1,328 @@
+<html lang="en"><head>
+	<meta charset="UTF-8">
+	<title>FriendFinder</title>
+
+	<!-- Latest compiled and minified CSS & JS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+	<!-- Font Awesome Glyphicons -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+
+	 <!--Chosen 
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.jquery.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.css">-->
+
+
+</head>
+
+	<div class="container">
+
+		<h2><strong>Survey Questions</strong></h2>
+		<hr>
+  
+	<form id="surveyForm"> 
+		
+		<h3><strong>About You</strong></h3>
+		<h4>Name (Required):</h4>
+		<input type="text" name="" id="name" class="form-control" required="">
+
+		<h4>Link to Photo Image (Required):</h4>
+		<input type="text" name="" id="photo" class="form-control" required="">
+		<hr>
+  	<div class="row" id="radioLegend">
+			<div class="col-md-12 col-sm-12 text-left">
+			    <p>Rate yourself on scale of 1-5 with 1=Strongly Agree and 5=Strongly Disagree. All questions must be answered.</p>
+			</div>
+		</div>	
+	<div class="row" id="q1Row">
+    <div class="col-md-2 col-sm-2" id="q1Col1">
+			<h4><strong>Question 1:</strong></h4>
+		</div>	
+		<div class="col-md-5 col-sm-5" id="q1Col2">			
+			<h4>You enjoy eating out and trying different foods.<h4>
+		</div>
+		<div class="col-md-5 col-sm-5" id="q1Col3">
+			<h4>
+					<input name="q1" value=1 type="radio">1
+					<input name="q1" value=2 type="radio">2
+					<input name="q1" value=3 type="radio">3
+					<input name="q1" value=4 type="radio">4
+					<input name="q1" value=5 type="radio">5 				
+			</h4>
+		</div>
+	</div>
+	<div class="row" id="q2Row">
+		 <div class="col-md-2 col-sm-2" id="q1Col1">
+			<h4><strong>Question 2:</strong></h4>
+		</div>
+		<div class="col-md-5 col-sm-5" id="q2Col1">			
+			<h4>You enjoy listening to music and different music genres.</h4>
+		</div>
+		<div class="col-md-5 col-sm-5" id="q2Col2">
+			<h4>
+				  <input name="q2" value=1 type="radio">1
+					<input name="q2" value=2 type="radio">2
+					<input name="q2" value=3 type="radio">3
+					<input name="q2" value=4 type="radio">4
+					<input name="q2" value=5 type="radio">5				
+			</h4>
+		</div>
+	</div>
+	<div class="row" id="q3Row">
+		 <div class="col-md-2 col-sm-2" id="q3Col1">
+			<h4><strong>Question 3:</strong></h4>
+		</div>
+		<div class="col-md-5 col-sm-5" id="q3Col2">			
+			<h4>You like going to music, food, and art related events around town.</h4>
+		</div>
+		<div class="col-md-5 col-sm-5" id="q3Col3">
+			<h4>
+					<input name="q3" value=1 type="radio">1
+					<input name="q3" value=2 type="radio">2
+					<input name="q3" value=3 type="radio">3
+					<input name="q3" value=4 type="radio">4
+					<input name="q3" value=5 type="radio">5 			
+			</h4>
+		</div>
+	</div>
+	<div class="row" id="q4Row">
+		<div class="col-md-2 col-sm-2" id="q4Col1">
+			<h4><strong>Question 4:</strong></h4>
+		</div>
+		<div class="col-md-5 col-sm-5" id="q4Col2">			
+			<h4>You enjoy the beach and being outdoors.</h4>
+		</div>
+		<div class="col-md-5 col-sm-5" id="q4Col3">
+			<h4>
+					<input name="q4" value=1 type="radio">1
+					<input name="q4" value=2 type="radio">2
+					<input name="q4" value=3 type="radio">3
+					<input name="q4" value=4 type="radio">4
+					<input name="q4" value=5 type="radio">5 			
+			</h4>
+		</div>
+	</div>
+	<div class="row" id="q5Row">
+		<div class="col-md-2 col-sm-2" id="q5Col1">
+			<h4><strong>Question 5:</strong></h4>
+		</div>
+		<div class="col-md-5 col-sm-5" id="q5Col2">			
+			<h4>You like to travel.<h4>
+		</div>
+		<div class="col-md-5 col-sm-5" id="q5Col3">
+			<h4>
+					<input name="q5" value=1 type="radio">1
+					<input name="q5" value=2 type="radio">2
+					<input name="q5" value=3 type="radio">3
+					<input name="q5" value=4 type="radio">4
+					<input name="q5" value=5 type="radio">5 		
+			</h4>
+		</div>
+	</div>
+ <div class="row" id="q6Row">
+		<div class="col-md-2 col-sm-2" id="q6Col1">
+			<h4><strong> Question 6:</strong></h4>
+		</div>
+		<div class="col-md-5 col-sm-5" id="q6Col2">			
+			<h4>You work to live and don't live to work.</h4>
+		</div>
+		<div class="col-md-5 col-sm-5" id="q6Col3">
+			<h4>
+					<input name="q6" value=1 type="radio">1
+					<input name="q6" value=2 type="radio">2
+					<input name="q6" value=3 type="radio">3
+					<input name="q6" value=4 type="radio">4
+					<input name="q6" value=5 type="radio">5 
+			</h4>
+		</div>
+	</div>
+	<div class="row" id="q7Row">
+		<div class="col-md-2 col-sm-2" id="q7Col1">
+			<h4><strong>Question 7:</strong></h4>
+		</div>
+		<div class="col-md-5 col-sm-5" id="q7Col2">			
+			<h4>You are thoughtful and considerate of others.</h4>
+		</div>
+		<div class="col-md-5 col-sm-5" id="q7Col3">
+			<h4>
+					<input name="q7" value=1 type="radio">1
+					<input name="q7" value=2 type="radio">2
+					<input name="q7" value=3 type="radio">3
+					<input name="q7" value=4 type="radio">4
+					<input name="q7" value=5 type="radio">5 
+			</h4>
+		</div>
+	</div>
+	<div class="row" id="q8Row">
+		<div class="col-md-2 col-sm-2" id="q8Col1">
+			<h4><strong>Question 8:</strong></h4>
+		</div>
+		<div class="col-md-5 col-sm-5" id="q8Col2">			
+			<h4>Family comes first.<h4>
+		</div>
+		<div class="col-md-5 col-sm-5" id="q8Col3">
+			<h4>
+					<input name="q8" value=1 type="radio">1
+					<input name="q8" value=2 type="radio">2
+					<input name="q8" value=3 type="radio">3
+					<input name="q8" value=4 type="radio">4
+					<input name="q8" value=5 type="radio">5 	
+			</h4>
+		</div>
+	</div>
+	<div class="row" id="q9Row">
+		<div class="col-md-2 col-sm-2" id="q9Col1">
+			<h4><strong>Question 9:</strong></h4>
+		</div>
+		<div class="col-md-5 col-sm-5" id="q9Col2">			
+			<h4>You are a spiritual person.</h4>
+		</div>
+		<div class="col-md-5 col-sm-5" id="q9Col3">
+			<h4>
+					<input name="q9" value=1 type="radio">1
+					<input name="q9" value=2 type="radio">2
+					<input name="q9" value=3 type="radio">3
+					<input name="q9" value=4 type="radio">4
+					<input name="q9" value=5 type="radio">5 		
+			</h4>
+		</div>
+	</div>
+	<div class="row" id="q10Row">
+		<div class="col-md-2 col-sm-2" id="q10Col1">
+			<h4><strong>Question 10:</strong></h4>
+		</div>
+		<div class="col-md-5 col-sm-5" id="q10Col2">			
+			<h4>You enjoy sports and following different college and professional teams.</h4>
+		</div>
+		<div class="col-md-5 col-sm-5" id="q10Col3">
+			<h4>
+					<input name="q10" value=1 type="radio">1
+					<input name="q10" value=2 type="radio">2
+					<input name="q10" value=3 type="radio">3
+					<input name="q10" value=4 type="radio">4
+					<input name="q10" value=5 type="radio">5 
+			</h4>
+		</div>
+		<br>
+		<br>
+		<!-- Submit Button -->
+		<button type="submit" class="btn btn-primary btn-lg btn-block" id="submit"><i class="fa fa-check-circle" aria-hidden="true"></i>
+ Submit</button>
+</form>
+		<hr>
+	    <footer class="footer">
+	      <div class="container">
+	      </div>
+	    </footer>
+
+	</div>
+
+	<!-- Modal -->
+	<div id="resultsModal" class="modal fade" role="dialog">
+	  <div class="modal-dialog">
+
+	    <!-- Modal content-->
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal">×</button>
+	        <h2 class="modal-title"><strong>Best Match</strong></h2>
+	      </div>
+	      <div class="modal-body">
+	        <h2 id="matchName"></h2>
+	        <img id="matchImg" src="http://timeswampland.files.wordpress.com/2011/03/austinpowersingoldmember_photos_232.jpg?w=768" alt="">
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+	      </div>
+	    </div>
+
+	  </div>
+	</div>
+<style>
+
+
+	input[type="radio"] {
+		margin: 10px
+	}
+
+	.radioLegend {
+		font-size: 14px
+	}
+
+	#matchImg {
+		width: 400px;
+		height: 300px;
+	}
+</style>
+
+<script type="text/javascript">
+
+    // Capture the form inputs 
+    $("#submit").on("click", function(){
+		event.preventDefault();
+	
+    	// Form validation
+    	function validateForm() {
+		   var isValid = true;
+		  
+			$('.form-control').each(function() {
+		    if ( $(this).val() === '' )
+		        isValid = false;
+		  });
+
+		$('input:radio',"#surveyForm").each(function() {
+   
+		  	if( $('input[name='+$(this).attr("name")+"]:checked","#surveyForm").val() === undefined) {
+		  		isValid = false;
+			  }
+			
+		  });
+		  return isValid;
+		 //console.log(isValid);
+		}
+		
+		// If all required fields are filled
+		if (validateForm() == true)
+		{
+			// Create an object for the user's data
+	    	var userData = {
+	    		name: $("#name").val(),
+	    		photo: $("#photo").val(),
+	    		scores: [$("input[name=q1]:checked", "#surveyForm").val(), $("input[name=q2]:checked", "#surveyForm").val()
+				, $("input[name=q3]:checked", "#surveyForm").val(),$("input[name=q4]:checked", "#surveyForm").val()
+				, $("input[name=q5]:checked", "#surveyForm").val(), $("input[name=q6]:checked", "#surveyForm").val()
+				, $("input[name=q7]:checked", "#surveyForm").val(),$("input[name=q8]:checked", "#surveyForm").val()
+				, $("input[name=q9]:checked", "#surveyForm").val(), $("input[name=q10]:checked", "#surveyForm").val() ]
+	    	}
+
+
+	    	// Grab the URL of the website
+	    	var currentURL = window.location.origin;
+
+	    	// AJAX post the data to the friends API. 
+	    	$.post(currentURL + "/api/friends", userData, function(data){
+
+	    		// Grab the result from the AJAX post so that the best match's name and photo are displayed.
+	    		$("#matchName").text(data.name);
+	    		$('#matchImg').attr("src", data.photo);
+
+		    	// Show the modal with the best match 
+		    	$("#resultsModal").modal('toggle');
+
+	    	});
+		}
+		else
+		{
+			alert("Please fill out all fields before submitting!");
+		}
+    	
+    	return false;
+    });
+
+
+  </script>
+
+
+<div id="window-resizer-tooltip" style="display: none;"><a href="#" title="Edit settings"></a><span class="tooltipTitle">Window size: </span><span class="tooltipWidth" id="winWidth">1296</span> x <span class="tooltipHeight" id="winHeight">696</span><br><span class="tooltipTitle">Viewport size: </span><span class="tooltipWidth" id="vpWidth">727</span> x <span class="tooltipHeight" id="vpHeight">582</span></div></body></html>
